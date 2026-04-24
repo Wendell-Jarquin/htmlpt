@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio - Wendell Armengol Jarquín Vivas</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .bio-main {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px #007bff22;
+            padding: 2em;
+        }
+
+        .bio-title {
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 0.5em;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+
+        .bio-back {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 1em;
+            display: inline-block;
+        }
+
+        .bio-back:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bio-bg" style="min-height:100vh;display:flex;align-items:center;justify-content:center;">
+        <main class="bio-main" onclick="event.stopPropagation()">
+            <div class="bio-title"><i class="fas fa-user-graduate"></i> My Biography</div>
+            <p style="color:#232526;">
+                My most recognized achievements, according to myself, start with completing my high school studies.
+                After that, I pursued a technical career focused on what I truly enjoy: programming. One of my greatest
+                accomplishments was finding a job related to my passion, working as a systems technician at the Nueva
+                Guinea City Hall. Owning my first motorcycle is also a milestone that has helped me a lot in life. And,
+                of course, being alive and well up to this day is something I am deeply grateful for.
+            </p>
+        </main>
+    </div>
+    <script>
+        document.getElementById('bio-bg').addEventListener('click', function (e) {
+            window.location.href = '../index.html';
+        });
+    </script>
+</body>
+
+</html>

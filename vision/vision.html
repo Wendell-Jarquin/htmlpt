@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión - Wendell Armengol Jarquín Vivas</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .vision-main {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px #007bff22;
+            padding: 2em;
+        }
+
+        .vision-title {
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 0.5em;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="vision-bg" style="min-height:100vh;display:flex;align-items:center;justify-content:center;">
+        <main class="vision-main" onclick="event.stopPropagation()">
+            <div class="vision-title"><i class="fas fa-eye"></i> Mi Visión</div>
+            <p style="color:#232526;">
+                In 10 years, I will have founded a software development company focused on delivering fast, high-quality web systems and applications. My team and I will be nationally recognized for our ability to create complete, robust, and responsive solutions for our clients. We will be leading innovation, always adopting the latest technologies and best practices to stay ahead of the competition.<br><br>
+                Our company will be known for its commitment to excellence, customer satisfaction, and the professional growth of every team member. We will have a strong presence in the national market, consistently positioned among the leading companies in systems development and rapid response solutions. Together, we will be setting new standards for what is possible in the world of technology and will be inspiring others to pursue their dreams with passion and dedication.
+            </p>
+        </main>
+    </div>
+    <script>
+        document.getElementById('vision-bg').addEventListener('click', function (e) {
+            window.location.href = '../index.html';
+        });
+    </script>
+</body>
+
+</html>
